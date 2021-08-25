@@ -18,13 +18,13 @@ def create_table():
     with connection:
         cursor.execute("""
             CREATE TABLE stock_weekly(
-                DATE INTEGER,
-                STOCK TEXT,
-                OPEN REAL,
-                HIGH REAL,
-                LOW REAL,
-                CLOSE REAL,
-                VOLUME INTEGER )
+                date INTEGER,
+                stock TEXT,
+                open REAL,
+                high REAL,
+                low REAL,
+                close REAL,
+                volume INTEGER )
             """)
         
 def insert_data(data):

@@ -15,9 +15,9 @@ if __name__ == "__main__":
     # Query 
     with connection:
         cursor.execute("""
-                       SELECT STOCK, strftime('%Y', DATE) as 'Year', AVG(VOLUME)
+                       SELECT stock, strftime('%Y', date) as 'Year', AVG(volume)
                        FROM stock_weekly 
-                       GROUP BY Year, STOCK
+                       GROUP BY Year, stock
                        """)
         
     data = cursor.fetchall()
