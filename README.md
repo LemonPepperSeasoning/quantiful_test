@@ -21,22 +21,31 @@ python part2.py //Creates stock_avg_volume_per_year.csv file
 ```
 python app.py
 ```
-#### part 1
+### part 1
 ```
 http://127.0.0.1:5000/GET/stocks
 ```
 
-#### part 2
-##### To show candlestick 
+### part 2
+#### To show candlestick [Example candlestick]
 ```
 http://127.0.0.1:5000/PLOT/candlestick/{STOCK_SYMBOL}
 
 Example.
 http://127.0.0.1:5000/PLOT/candlestick/AMZN
 ```
-##### To show volume of weekly trade
+#### To show volume of weekly trade
 ```
 http://127.0.0.1:5000/PLOT/volume
 ```
+
+
+### Example candlestick
+<img src="images/candlestick.jpg" height="300">
+
+### Example volume
+<img src="images/volume.jpg" height="300">
+
+
 
 
