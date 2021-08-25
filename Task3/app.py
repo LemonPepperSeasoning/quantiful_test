@@ -20,11 +20,10 @@ def root():
 
 @app.route('/GET/stocks')
 def get():
-    connect_db()
+    connection = sql.connect("AlphaVantage.db")
+    cursor = connection.cursor()
     with connection:
-        cursor.execute("""
-                       SELECT DISTINCT stock FROM stock_weekly;
-                       """)
+        cursor.execute("SELECT DISTINCT stock FROM stock_weekly")
     available_stock = cursor.fetchall()
     return str(available_stock)
 
