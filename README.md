@@ -13,8 +13,8 @@ python part1.py
 
 ### Task 2 ( cd into "Task2" )
 ```
-python part1.py //Creates AlphaVantage.db file
-python part2.py //Creates stock_avg_volume_per_year.csv file
+python part1.py #Creates AlphaVantage.db file
+python part2.py #Creates stock_avg_volume_per_year.csv file
 ```
 
 ### Task 3 ( cd into "Task3" )
